@@ -27,7 +27,7 @@ Primijetimo sljedeće, ako je brid koji spaja dijete ***v*** s njegovim roditelj
 Nadalje to znači da na putu od bilo kojeg čvora do korijena stabla postoji najviše *log2(|**G**|)* laganih bridova. Još primijetimo da svi uzastopni teški bridovi čine lance, a ne stabla 
 jer iz svakog čvora izlazi maksimalno jedan težak brid. 
 <p align="center">
-  <img src="https://github.com/crompetition/blog/assets/140533071/60bbe254-952b-424d-a077-5d773e0a56b3" />
+  <img src="https://github.com/crompetative/blog/blob/92111b0ab0d3376b30857281f61d4d91f0b4d3d7/grafovi/slike/tezak-lagan_rusenje_skica.png" />
 </p>
 <p align="center"> <i> Lagani bridovi obojani su plavo, a teški crveno. </i> </p>
 
