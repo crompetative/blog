@@ -11,7 +11,7 @@ Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** <= ***Q***, ***|G|**
 ### Spora i djelomično točna rješenja
 Započnimo nekim očito sporim rješenjima. Na primjer mogli bismo svaki za svako pitanje 1. vrste proći pretragom u dubinu (eng. ***DFS***) iz čvora ***u*** i za svaki čvor 
 pamtiti sumu od čvora ***u*** do tog nekog čvora, a za svako pitanje 2. vrste samo promijeniti vrijednost tog nekog brida. Primijetimo kako za svako pitanje 1. vrste prolazimo 
-cijelim stablom, pa je složenost *O(**Q** * *|***G***|*)*.
+cijelim stablom, pa je složenost _O(**Q** * _|***G***|_)_.
 
 Primijetimo kako kada bi stablo bilo lanac tada bismo mogli izgraditi tournament i 1. pitanje bi odgovaralo upitu sume nad nekim intervalom (bez smanjenja općenitosti možemo
 pretpostaviti da je prvi čvor lanca 1, drugi 2, treći 3 ... zadnji |***G***|), odnosno sumu intervala ***[u,v]***, dok bi 2. pitanje bila promjena vrijednosti ***u***-tog elementa
@@ -57,5 +57,5 @@ Također pri odabiru teškog brida dovoljno je odabrati onaj brid koji vodi do d
 ### Dodatno
 Ako nas zanima vrijednost upita u tournamentu, a tako da upit pokriva cijeli tournament zapravo taj upit samo vraća vrijednost koja se nalazi u korijenu tournamenta. Tu mogućnost smo izgubili 
 sa spajanjem tournamenta u jedan, odnosno, sada upit koji pokriva cijeli lanac nas ne košta *O(1)* već *O(log2)*. Sada bi nam moglo pasti na pamet da ipak razdvojimo te tournamente, ali to 
-također ima svoje probleme - mogli bismo prijeći memorijsko ograničenje jer tournament mora pokrivati duljinu potencije 2, a da i ne spominjemo _ruznocu_ takve implementacije. To možemo izvesti 
-konstrukcijom tournamenta koji zauzima točno *O(2 * **N**)* memorije (ako je ***N*** duljina niza listova). Objašnjenje tog algoritma ovdje neće biti prezentirano. 
+također ima svoje probleme - mogli bismo prijeći memorijsko ograničenje jer tournament mora pokrivati duljinu potencije 2. To možemo izvesti konstrukcijom tournamenta koji zauzima točno 
+*O(2 * **N**)* memorije (ako je ***N*** duljina niza listova). Objašnjenje tog algoritma ovdje neće biti prezentirano. 
