@@ -14,7 +14,7 @@ pamtiti sumu od čvora ***u*** do tog nekog čvora te zatim ispisati tu vrijedno
 Primijetimo kako za svako pitanje 1. vrste prolazimo cijelim stablom, pa je složenost _O(**Q**_ * |***G***|_)_.
 
 Primijetimo kako kada bi stablo bilo lanac tada bismo mogli izgraditi tournament (nad tim lancem) i 1. pitanje bi odgovaralo upitu sume nad nekim intervalom (od čvora ***u*** 
-do čvora ***v***), dok bi 2. pitanje bila promjena vrijednosti nekog lista tog tournamenta. Tada složenost postaje *O(**Q** * log2|**G**|)* - no ne zaboravimo, samo kada je stablo lanac. 
+do čvora ***v***), dok bi 2. pitanje bila promjena vrijednosti nekog lista tog tournamenta. Sada složenost postaje *O(**Q** * log2|**G**|)* - no ne zaboravimo, samo kada je stablo lanac. 
 Ono što bi voljeli napraviti jest "srušiti" stablo tako da postane jedan (ili vise) niz nad kojim možemo raditi operacije tournamenta kao i što smo ih radili na lancu.
 
 ---
