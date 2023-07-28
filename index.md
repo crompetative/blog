@@ -1,4 +1,4 @@
-# Uvod
+# Crompetative
 Kratki članci o natjecateljskom programiranju na hrvatskom.
   
 Pregled sadržaja:
