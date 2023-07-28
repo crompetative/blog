@@ -37,20 +37,17 @@ Na putu od svakog čvora do korijena stabla nalazi se maksimalno *log2(|**G**|)*
 stabla nalazi se maksimalno 2 * *log2(|**G**|)* lanaca teških bridova i 2 * *log2(|**G**|)* laganih bridova. Zatim što možemo napraviti jest izgraditi tournament stablo nad svakim lancem teških
 bridova (u samoj implementaciji bit će dovoljno održavati samo jedno tournament stablo) i riješili smo zadatak!
 
-Kako bismo riješili pitanja 1. vrste pronalazimo najniži zajednički predak čvorova (eng. ***LCA***) iz upita i penjemo se od oba čvora prema tom pretku. Ako je brid iz trenutačnog čvora
+Kako bismo riješili pitanja 1. vrste pronalazimo najbliži zajednički predak čvorova (eng. ***LCA***) iz upita i penjemo se od oba čvora prema tom pretku. Ako je brid iz trenutačnog čvora
 u njegovog roditelja lagan ručno dodajemo težinu tog brida na rješenje, u suprotnom dodajemo sumu intervala bridova iz lanca teških bridova i preskačemo cijeli taj lanac do njegovog vrha, tj. 
 laganog brida. Treba biti pažljiv kada je zajednički predak unutar lanca teških bridova, jer tada ne uzimamo vrijednost cijelog lanaca nego samo nekog intervala.
 
 Slično kada trebamo promijeniti težinu brida, ako je on lagan ručno ga mijenjamo, a u suprotnom mijenjamo pojedinačnu vrijednost u tournament stablu pripadajućeg teškog lanca.
 
-Analizirajmo složenost, pošto na svakom pitanju 1. vrste prolazimo kroz 2 * *log2(\|**G**\|)* lanaca i složenost upita na svakom pripadajućem lancu jest *log2(\|**duljina_lanca**\|)* krajnja
+Analizirajmo složenost, pošto na svakom pitanju 1. vrste prolazimo kroz *O(log2(*\|***G***\|*)* lanaca i složenost upita na svakom pripadajućem lancu jest *O(log2(*\|**lanac**\|*)* krajnja
 složenost jest *O(**Q** * log2(\|**G**\|)^2)*.
 
 ---
-### Implementacija i savjeti
-Što se tiče samog zadatke moguće ga je riješiti u složenosti *O(**Q** * log2(\|**G**\|))* bez korištenja TLR-a, ali ovo je dobar uvodan zadatak za ovaj algoritam i u mnogim zadacima on je glavno
-riješenje.
-
+### Implementacija
 Kao što je već spomenuto nije potrebno raditi odvojena tournament stabla za svaki lanac teških bridova već ih sve možemo spojiti u jedan veliki niz, pritom trebamo za svaki lanac znati gdje
 započinje i gdje završava u tom velikom nizu, tj. za svaki brid (čvor) trebamo znati koji je njihov indeks.
 
