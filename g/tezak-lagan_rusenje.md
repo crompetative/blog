@@ -1,4 +1,4 @@
-# **T**ežak-**L**agan **R**ušenje (TLR) stabla (eng. _**H**eavy-**L**ight **D**ecomposition of tree_) 
+# Težak-Lagan Rušenje (TLR) stabla (eng. _Heavy-Light Decomposition of tree_) 
 
 ### Primjerni zadatak
 Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** <= ***Q***, ***|G|*** <= **10^5**). Postoje dva tipa pitanja:
