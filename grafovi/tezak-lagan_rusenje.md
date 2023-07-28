@@ -15,7 +15,7 @@ Primijetimo kako za svako pitanje 1. vrste prolazimo cijelim stablom, pa je slo�
 
 Primijetimo kako kada bi stablo bilo lanac tada bismo mogli izgraditi tournament (nad tim lancem) i 1. pitanje bi odgovaralo upitu sume nad nekim intervalom (od čvora ***u*** 
 do čvora ***v***), dok bi 2. pitanje bila promjena vrijednosti nekog lista tog tournamenta. Sada složenost postaje *O(**Q** * log2|**G**|)* - no ne zaboravimo, samo kada je stablo lanac. 
-Ono što bi voljeli napraviti jest "srušiti" stablo tako da postane jedan (ili više) niz nad kojim možemo raditi operacije tournamenta kao i što smo ih radili na lancu.
+Ono što bi voljeli napraviti jest "srušiti" stablo tako da postane jedan (ili više) niz(eva) nad kojim možemo raditi operacije tournamenta kao i što smo ih radili na lancu.
 
 ---
 ### Teški i lagani bridovi
