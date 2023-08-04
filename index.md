@@ -1,3 +1,4 @@
+<link rel="shortcut icon" type="image/png" href="{{ "favicon.ico"  | absolute_url }}">
 <p align="center"> <img src="https://github.com/crompetative/blog/assets/140803138/fb6c575c-3d6c-493a-b191-958309bd87bd" /> </p>
 Kratki članci o natjecateljskom programiranju na hrvatskom.
   
