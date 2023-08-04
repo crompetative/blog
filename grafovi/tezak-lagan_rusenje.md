@@ -1,4 +1,5 @@
 <link rel="shortcut icon" type="image/png" href="{{ "favicon.ico"}}" />
+<title> TLR | Crompetitive </title>
 
 # Težak-Lagan Rušenje (TLR) stabla (eng. _Heavy-Light Decomposition of tree_) 
 
