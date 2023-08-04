@@ -1,7 +1,9 @@
-<link rel="shortcut icon" type="image/png" href="{{ "favicon.ico"  | absolute_url }}">
+<link rel="shortcut icon" type="image/png" href="{{ "favicon.ico"}}">
 <p align="center"> <img src="https://github.com/crompetative/blog/assets/140803138/fb6c575c-3d6c-493a-b191-958309bd87bd" /> </p>
 Kratki članci o natjecateljskom programiranju na hrvatskom.
   
 Pregled sadržaja:
 * Grafovi:
   * [Težak-Lagan Rušenje (TLR)](https://crompetitive.github.io/blog/grafovi/tezak-lagan_rusenje "Težak-lagan rušenje stabla")
+* Strukture:
+  * [Monotone strukture](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
