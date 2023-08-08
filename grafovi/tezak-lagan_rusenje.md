@@ -1,7 +1,7 @@
 # Težak-Lagan Rušenje (TLR) stabla (eng. _Heavy-Light Decomposition of tree_) 
 
 ### Primjerni zadatak
-Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** <= ***Q***, ***|G|*** <= **10^5**). Postoje dva tipa pitanja:
+Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** ⩽ _**Q**_, |_**G**_| ⩽ **10^5**). Postoje dva tipa pitanja:
 
 1) (***u, v***) → ispisi sumu težina bridova na putu od čvora ***u*** do ***v***.
   
