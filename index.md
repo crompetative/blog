@@ -21,7 +21,7 @@ Pregled sadržaja:
   * Manje na veće (eng. _Smaller to larger_)
   * Jako povezane komponente (eng. _Strongly connected components_)
   * 2-zadovoljivost (eng. _2-satisfiability_)
-  * [Težak-Lagan rušenje (eng. _Heavy-light decomposition_)](https://crompetitive.github.io/blog/grafovi/tezak-lagan_rusenje "Težak-lagan rušenje stabla")
+  * [Težak-lagan rušenje (eng. _Heavy-light decomposition_)](https://crompetitive.github.io/blog/grafovi/tezak-lagan_rusenje "Težak-lagan rušenje stabla")
   * Centroidno rušenje (eng. _Centroid decomposition_)
 * **Strukture**:
   * [Monotone strukture (eng. Monotone structures_)](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
