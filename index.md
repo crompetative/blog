@@ -28,7 +28,7 @@ Pregled sadržaja:
 * **Strukture**:
   * [Monotone strukture (eng. Monotone structures_)](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
   * Fenwick stablo (eng. _Fenwick tree, Binary indexed tree_)
-  * Tournament stablo (eng. _Segment tree_)
+  * Turnirsko stablo (eng. _Segment tree, Tournament tree_)
   * Olbat stablo (eng. _Eer tree_)
 * **Metode rješavanja**:
   * Na silu (eng. _Brut force_)
