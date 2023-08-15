@@ -27,7 +27,7 @@ Pregled sadržaja:
   * Centroidno rušenje (eng. _Centroid decomposition_)
 * **Strukture**:
   * [Monotone strukture (eng. Monotone structures_)](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
-  * Fenwick stablo (eng. _Fenwick tree, Binary indexed tree_)
+  * Logaritamska (eng. _Fenwick tree, Binary indexed tree_)
   * Turnirsko stablo (eng. _Segment tree, Tournament tree_)
   * Olbat stablo (eng. _Eer tree_)
 * **Metode rješavanja**:
