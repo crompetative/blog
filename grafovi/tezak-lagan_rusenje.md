@@ -62,6 +62,7 @@ kod
 * [QTREE - SPOJ](https://www.spoj.com/problems/QTREE/) - Zadatak sličan uvodnom, samo što pri upitu trebamo ispisati najveću vrijednost (brida) na putu.
 * [GSS7 - SPOJ](https://www.spoj.com/problems/GSS7/) - Svaki čvor ima vrijednost. Pri promjeni vrijednosti ne mijenjamo samo jedan, već cijeli put vrhova. Također pri upitu trebamo ispisati najveću uzastopnu sumu vrijednosti čvorova na nekom putu.
 * [Tourism - JOISC '23](https://oj.uz/problem/view/JOI23_tourism) - Težak zadatak.
+
 ---
 ### Dodatno
 Ako nas zanima vrijednost upita u tournamentu, a tako da upit pokriva cijeli tournament zapravo taj upit samo vraća vrijednost koja se nalazi u korijenu tournamenta. Tu mogućnost smo izgubili 
