@@ -29,6 +29,9 @@ Pregled sadržaja:
   * [Monotone strukture (eng. Monotone structures_)](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
   * Logaritamska (eng. _Fenwick tree, Binary indexed tree_)
   * Turnirsko stablo (eng. _Segment tree, Tournament tree_)
+  * Turnirsko stablo s propagacijaam (eng. _Lazy propagations on segment tree_)
+  * Perzistentno turnirsko stablo (eng. _Persistant segment tree_)
+  * Dinamičko turnirkso stasblo (eng. _Dynamic segment tree_) 
   * Olbat stablo (eng. _Eer tree_)
 * **Metode rješavanja**:
   * Na silu (eng. _Brut force_)
