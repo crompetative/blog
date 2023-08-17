@@ -9,6 +9,11 @@ Zadan je broj akcija _**Q**_ (**1** ⩽ _**Q**_ ⩽ **10^6**) i prazan niz _**A*
 na kraju niza. 
 
 3) Ispiši najveći broj koji se nalazi u nizu _**A**_.
+<p align="center">
+  <img src="https://crompetitive.github.io/blog/assets/mono_uvod_skica.png" />
+</p>
+<p align="center"> <i> U nekom trenutku niz je [9, 4, 1, 2], te je najveći element <b>9</b>. Zatim dodajemo <b>5</b> na desni kraj, te je najveći i dalje <b>9</b>. No nakon dodavanja
+brišemo element na početku (<b>9</b>) te je sada najveći element <b>5</b>. Nakon ovih promijena niz je [4, 1, 2, 5]. </i> </p>
 
 ---
 ### Spora rješenja i početna opažanja 
@@ -23,4 +28,5 @@ postaje _**x**_ i povećamo _**d**_ za jedan. Akciju druge vrste rješavamo samo
 _**r**_ i pamćenjem najvećeg elementa. Složenost ovog potupka je _O(_|_**A**_|_)_ odnosno _O(**Q**)_. 
 
 Ukupna složenost ovog algoritma jest _O(_|_**A**_| * _**Q**)_, što je presporo. Primjetimo jedno isprava glupo opažanje. Ako bi postojao dodatan uvijet u zadatku da je _**x**_ ≥ trenutno 
-najvećeg elementa u nizu _**A**_ tada bi složenost bila _O(**Q**)_ jer umjesto da tražimo najveći element u cijelome nizu mi znamo da se on nalazi ili na početku ili na kraju niza.
+najvećeg elementa u nizu _**A**_ tada bi složenost traženja najvećeg elementa bila _O(**1**)_ jer umjesto da tražimo najveći element u cijelome nizu mi znamo da se on nalazi ili na početku 
+ili na kraju niza, pa bi ukupna složenost bila _O(**Q**)_. 
