@@ -9,7 +9,7 @@ Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** ⩽ _**Q**_, |_**G**
 <p align="center">
   <img src="https://crompetitive.github.io/blog/assets/tlr_uvod_skica.png" />
 </p>
-<p align="center"> <i> Lagani bridovi obojani su plavo, a teški crveno. </i> </p>
+<p align="center"> <i> Zbroj težina na putu od čvora 1 do čvora 4 jest <b>5</b>, a na putu od čvora 4 do čvora 6 zbroj jest <b>6</b> . </i> </p>
 
 ---
 ### Spora i djelomično točna rješenja
