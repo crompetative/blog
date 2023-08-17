@@ -6,6 +6,10 @@ Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** ⩽ _**Q**_, |_**G**
 1) (***u, v***) → Ispiši sumu težina bridova na putu od čvora ***u*** do ***v***.
   
 2) (***e, w***) → Promjeni težinu brida ***e*** na ***w***.
+<p align="center">
+  <img src="https://crompetitive.github.io/blog/assets/tlr_uvod_skica.png" />
+</p>
+<p align="center"> <i> Lagani bridovi obojani su plavo, a teški crveno. </i> </p>
 
 ---
 ### Spora i djelomično točna rješenja
