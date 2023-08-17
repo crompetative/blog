@@ -3,9 +3,9 @@
 ### Uvodni zadatak
 Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** ⩽ _**Q**_, |_**G**_| ⩽ **10^5**). Postoje dva tipa pitanja:
 
-1) (***u, v***) → ispisi sumu težina bridova na putu od čvora ***u*** do ***v***.
+1) (***u, v***) → Ispiši sumu težina bridova na putu od čvora ***u*** do ***v***.
   
-2) (***e, w***) → promjeni težinu brida ***e*** na ***w***.
+2) (***e, w***) → Promjeni težinu brida ***e*** na ***w***.
 
 ---
 ### Spora i djelomično točna rješenja
