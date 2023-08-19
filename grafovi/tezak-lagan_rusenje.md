@@ -66,10 +66,3 @@ kod
 * [QTREE - SPOJ](https://www.spoj.com/problems/QTREE/) - Zadatak sličan uvodnom, samo što pri upitu trebamo ispisati najveću vrijednost (brida) na putu.
 * [GSS7 - SPOJ](https://www.spoj.com/problems/GSS7/) - Svaki čvor ima vrijednost. Pri promjeni vrijednosti ne mijenjamo samo jedan, već cijeli put vrhova. Također pri upitu trebamo ispisati najveću uzastopnu sumu vrijednosti čvorova na nekom putu.
 * [Tourism - JOISC '23](https://oj.uz/problem/view/JOI23_tourism) - Težak zadatak.
-
----
-### Dodatno
-Ako nas zanima vrijednost upita u tournamentu, a tako da upit pokriva cijeli tournament zapravo taj upit samo vraća vrijednost koja se nalazi u korijenu tournamenta. Tu mogućnost smo izgubili 
-sa spajanjem tournamenta u jedan, odnosno, sada upit koji pokriva cijeli lanac nas ne košta *O(1)* već *O(log2)*. Sada bi nam moglo pasti na pamet da ipak razdvojimo te tournamente, ali to 
-također ima svoje probleme - mogli bismo prijeći memorijsko ograničenje jer tournament mora pokrivati duljinu potencije 2. To možemo izvesti konstrukcijom tournamenta koji zauzima točno 
-*O(2 * **N**)* memorije (ako je ***N*** duljina niza listova). Objašnjenje tog algoritma ovdje neće biti prezentirano. 
