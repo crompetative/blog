@@ -12,6 +12,8 @@ Zadano je težinsko stablo ***G*** i ***Q*** pitanja (**1** ⩽ _**Q**_, |_**G**
 <p align="center"> <i> Zbroj težina na putu od čvora 1 do čvora 4 jest <b>5</b>, a na putu od čvora 4 do čvora 6 zbroj jest <b>6</b> . </i> </p>
 
 ---
+### Potrebno znanje
+Za daljnje razumijevanje teksta potrebno je znati: najniži zajednički predak (eng. _lowest common ancestor_) i turnirsko stablo (eng. _segment tree_).
 ### Spora i djelomično točna rješenja
 Započnimo nekim očito sporim rješenjima. Na primjer mogli bismo za svako pitanje 1. vrste proći pretragom u dubinu (eng. ***DFS***) iz čvora ***u*** i za svaki čvor 
 pamtiti sumu od čvora ***u*** do tog nekog čvora te zatim ispisati tu vrijednost za čvor ***v***, a za svako pitanje 2. vrste samo promijeniti vrijednost tog nekog brida. 
