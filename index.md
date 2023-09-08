@@ -12,7 +12,6 @@ Pregled sadržaja:
 * **Grafovi**:
   * Uvod u grafove
   * Teorija grafova
-  * Uvod u stabla
   * Ture i pretrage grafova:
     * Pretraga u širinu (eng. _Breadth first search_)
     * Pretraga u dubinu (eng. _Depth first search_)
@@ -31,7 +30,7 @@ Pregled sadržaja:
   * Turnirsko stablo (eng. _Segment tree, Tournament tree_)
   * Turnirsko stablo s propagacijaam (eng. _Lazy propagations on segment tree_)
   * Perzistentno turnirsko stablo (eng. _Persistant segment tree_)
-  * Dinamičko turnirkso stasblo (eng. _Dynamic segment tree_) 
+  * Dinamičko turnirsko stasblo (eng. _Dynamic segment tree_) 
   * Olbat stablo (eng. _Eer tree_)
 * **Metode rješavanja**:
   * Na silu (eng. _Brut force_)
