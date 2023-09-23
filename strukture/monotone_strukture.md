@@ -22,7 +22,7 @@ Za daljnje razumijevanje teksta potrebno je znati strukture: stog (eng. _stack_)
 
 ---
 ### Spora rješenja 
-Možemo raditi doslovno što se od nas traži u zadatku, odnosno trebamo održavati jedan dek i u svakome trenutku znati vrijednost najvećeg elementa koji se nalazi u njemu. Primijetimo kako takvo rješenje možemo raditi naivno u složenosti *O(**Q** * **Q**)*, tako da za svaki upit treće vrste prođemo po cijelome deku, te pronađemo i ispišemo najveći element (_**Q**_ puta prolazimo po cijelom nizu, koji je maksimalne duljine _**Q**_). Također moguće je i znatno bolje rješenje s turnirskim stablom u složenosti *O(**Q** * log2|**Q**|)*, no moguće je postići rješenje složenosti *O(**Q**)* koje, uz to što je i brže, je znatno lakše za koristiti i implementirati. 
+Možemo raditi doslovno što se od nas traži u zadatku, odnosno održavati jedan dek i u svakome trenutku znati vrijednost najvećeg elementa koji se nalazi u njemu. Primijetimo kako takvo rješenje možemo raditi naivno u složenosti *O(**Q** * **Q**)*, tako da za svaki upit treće vrste prođemo po cijelome deku, te pronađemo i ispišemo najveći element (_**Q**_ puta prolazimo po cijelom nizu, koji je maksimalne duljine _**Q**_). Također moguće je i znatno bolje rješenje s turnirskim stablom u složenosti *O(**Q** * log2|**Q**|)*, no moguće je postići rješenje složenosti *O(**Q**)* koje, uz to što je i brže, je znatno lakše za koristiti i implementirati. 
   
 ---
 ### Monotoni stog
