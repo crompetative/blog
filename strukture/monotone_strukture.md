@@ -2,14 +2,17 @@
 # Monotone strukture
 
 ### Uvodni zadatak
-Zadan je broj upita _**Q**_ (**1** ⩽ _**Q**_ ⩽ **10^6**) i prazan niz _**A**_, te svaki upit može biti jedan od sljedeća tri:
+Zadan je broj upita _**Q**_ (**1** ⩽ _**Q**_ ⩽ **10^6**) i prazan niz _**A**_, te svaki upit može biti jedan od sljedećih 5:
 
-1) (_**k**, **x**_)  → Ukoliko je _**k**_ jednak **0** dodaj _**x**_ na početak niza _**A**_, a ako je _**k**_ jedank **1** dodaj _**x**_ na kraj niza _**A**_.
+1) (_**x**_)  → Dodaj _**x**_ na početak niza _**A**_.
 
-2) (_**k**_) → Ukoliko je _**k**_ jednak **0** obriši element koji se nalazi na početku niza. U suprotnom ako je _**k**_ jednak **1** obriši element koji se nalazi
-na kraju niza. 
+2) (_**x**_)  → Obriši element na početku niza _**A**_.
 
-3) Ispiši najveći broj koji se nalazi u nizu _**A**_.
+3) (_**x**_)  → Dodaj _**x**_ na kraj niza _**A**_.
+
+4) (_**x**_)  → Obriši element na kraju niza _**A**_.
+
+5) Ispiši najveći broj koji se nalazi u nizu _**A**_.
 <p align="center">
   <img src="https://crompetitive.github.io/blog/assets/mono_uvod_skica.png" />
 </p>
