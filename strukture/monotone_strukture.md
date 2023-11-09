@@ -50,7 +50,9 @@ Pri dodavanju novog elementa na kraj niza događa se sljedeće. Na kraj reda _**
 
 Ukoliko trebamo izbrisati element na početku, trebamo provjeriti je li prvi element reda _**A**_ jednak prvom elementu deka _**S**_ - ukoliko jest, izbacimo prvi element iz deka _**S**_. Nakon te provjere možemo slobodno izbaciti element s početka reda _**A**_. 
 
-Primjetimo kako se najveći element uvijek nalazi na početku deka _**S**_. Također primjetimo kako složenost monotonog reda jest **amortizirano** *O(**Q**)*. Složenost je amortizirana jer makar operacija dodavanja nije nužno složenosti *O(**1**)*, brisanje s kraja reda dogoditi će se najviše *O(**Q**)* puta (dok operacija je brisanja uvijek *O(**1**)*).
+Primjetimo kako se najveći element uvijek nalazi na početku deka _**S**_, te da je  dek _**S**_ ne-rastuć.
+
+Također primjetimo kako složenost monotonog reda jest **amortizirano** *O(**Q**)*. Složenost je amortizirana jer makar operacija dodavanja nije nužno složenosti *O(**1**)*, brisanje s kraja reda dogoditi će se najviše *O(**Q**)* puta (dok operacija je brisanja uvijek *O(**1**)*).
 <p align="center">
   <img src="https://crompetitive.github.io/blog/assets/monotone_queue_image.png" />
 </p>
