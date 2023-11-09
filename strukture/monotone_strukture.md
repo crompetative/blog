@@ -49,3 +49,9 @@ Za ovu metodu trebati ćemo koristiti jedan dek (eng. _deque_) koji će odgovara
 Pri dodavanju novog elementa na kraj niza događa se sljedeće. Na kraj reda _**A**_ dodajemo novi element, a s kraja deka _**S**_ brišemo sve elemente koji su **manji** od novog elementa, te nakon tih brisanja tek dodajemo novi element na kraj. Motivacija iza ove radnje, jest ta da ukoliko imamo neki element _**a**_ koji je dodan prije nekog **većeg** elementa _**b**_, zapravo uopće nije vrijedan daljnjeg čuvanja, jer nikada neće moći biti najveći element (dokle god se _**a**_ nalazi u nizu, nalaziti će se i sigurno _**b**_). 
 
 Ukoliko trebamo izbrisati element na početku, trebamo provjeriti je li prvi element reda _**A**_ jednak prvom elementu deka _**S**_ - ukoliko jest, izbacimo prvi element iz deka _**S**_. Nakon te provjere možemo slobodno izbaciti element s početka reda _**A**_. 
+
+Primjetimo kako se najveći element uvijek nalazi na početku deka _**S**_. Također primjetimo kako složenost monotonog reda jest **amortizirano** *O(**Q**)*. Složenost je amortizirana jer makar operacija dodavanja nije nužno složenosti *O(**1**)*, brisanje s kraja reda dogoditi će se najviše *O(**Q**)* puta (dok operacija je brisanja uvijek *O(**1**)*).
+<p align="center">
+  <img src="https://crompetitive.github.io/blog/assets/monotone_queue_image.png" />
+</p>
+
