@@ -25,7 +25,7 @@ Pregled sadržaja:
   * [Težak-lagan rušenje (eng. _Heavy-light decomposition_)](https://crompetitive.github.io/blog/grafovi/tezak-lagan_rusenje "Težak-lagan rušenje stabla")
   * Centroidno rušenje (eng. _Centroid decomposition_)
 * **Strukture**:
-  * [Monotone strukture (eng. Monotone structures_)](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
+  * [Monotone strukture (eng. _Monotone structures_)](https://crompetitive.github.io/blog/strukture/monotone_strukture "Monotone strukture")
   * Logaritamska (eng. _Fenwick tree, Binary indexed tree_)
   * Turnirsko stablo (eng. _Segment tree, Tournament tree_)
   * Turnirsko stablo s propagacijaam (eng. _Lazy propagations on segment tree_)
