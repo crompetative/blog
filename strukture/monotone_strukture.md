@@ -82,15 +82,15 @@ struct monotone_queue {
   }
 
   // funkcija brisanja elementa (s početka)
-  void pop(int x) {
+  void pop() {
     // ukoliko su prvi elementi reda A i deka S jednaki obrisi prvi element iz S
     if(S.front() == A.front()) { S.pop_front(); }
     // obrisi prvi element iz A
-    A.pop_front();
+    A.pop();
   }
 
   // funkcija koja vraća najveći element u nizu
-  void max() {
+  int max() {
     // najveći element uvijek se nalazi na početku deka S
     return S.front();
   }
