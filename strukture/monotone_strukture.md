@@ -28,14 +28,24 @@ Za daljnje razumijevanje teksta potrebno je znati strukture: stog (eng. _stack_)
 Možemo raditi doslovno što se od nas traži u zadatku, odnosno održavati jedan dek i u svakome trenutku znati vrijednost najvećeg elementa koji se nalazi u njemu. Primijetimo kako takvo rješenje možemo raditi naivno u složenosti *O(**Q** * **Q**)*, tako da za svaki upit treće vrste prođemo po cijelome deku, te pronađemo i ispišemo najveći element (_**Q**_ puta prolazimo po cijelom nizu, koji je maksimalne duljine _**Q**_). Također moguće je i znatno bolje rješenje s turnirskim stablom u složenosti *O(**Q** * log2|**Q**|)*, no moguće je postići rješenje složenosti *O(**Q**)* koje, uz to što je i brže, je znatno lakše za koristiti i implementirati. 
   
 ---
-### Monotoni stog
+### Monotoni stog 
 
 Zamislimo pojednostavljenu verziju zadataka u kojoj su promjene (dodavanje i brisanje elementa) niza moguće samo s njegove jedne strane, na primjer s kraja (ako su promjene moguće samo na početku niza algoritam je "simetričan"). 
   
-Struktura monotonog stroga jest zapravo struktura koja radi točno ono što je opisano - dodaje i izbacuje elemente na kraju niza i u svakome trenutku održava najveći element, pritom sve to radeći u složenosti *O(**Q**)*, odnosno broju upita. 
+Struktura monotonog stroga jest zapravo struktura koja radi točno ono što je opisano - dodaje i izbacuje elemente na kraju niza i u svakome trenutku održava najveći element, pritom sve to radeći u složenosti *O(**Q**)*, odnosno broju upita (svaki upit imati će složenost *O(**1**)*). 
   
-Umjesto da u stog _**S**_ ubacujemo vrijednost elementa, ubacivati ćemo vrijednost jednaku _max(**zadnji_element_stoga**, **novi element**)_, ako je stog prazan možemo samo ubaciti vrijednost novog elementa. Vrijednost najvećeg elementa nalaziti će se na vrhu, a ako trebamo izbaciti zadnji element iz niza dovoljno je izbaciti zadnji element iz stoga. Za lakše razumijevanje strukture važno je primijetiti da je _**zadnji_element_stoga**_ zapravo jednak dosadašnjem maksimumu niza. Također primijetimo da je stog _**S**_ ne-opadajuć odnosno da je svaki element veći ili jednak od svojeg prethodnika.
+Umjesto da u stog _**S**_ ubacujemo vrijednost novog elementa, ubacivati ćemo vrijednost jednaku _max(**zadnji_element_stoga**, **novi element**)_, ako je stog prazan možemo samo ubaciti vrijednost novog elementa. Vrijednost najvećeg elementa nalaziti će se na vrhu, a ako trebamo izbaciti zadnji element iz niza dovoljno je izbaciti zadnji element iz stoga. Za lakše razumijevanje strukture važno je primijetiti da je _**zadnji_element_stoga**_ zapravo jednak dosadašnjem maksimumu niza. Također primijetimo da je stog _**S**_ ne-opadajuć odnosno da je svaki element veći ili jednak od svojeg prethodnika.
 <p align="center">
   <img src="https://crompetitive.github.io/blog/assets/monotone_stack.png" />
 </p>
 
+---
+### Monotoni red
+
+Zamislimo sljedeću pojednostavljenu verziju zadataka u kojoj možemo dodavati elemente samo na kraj i brisati s početka niza. to jest raditi operacije reda (eng. _queue_), te naravno ispisivati najveći element u nizu. Također monotoni red na engleskom se naziva _sliding window_ metoda jer naš red možemo zamisliti kao segment koji se pomiće u desno po nizu, ponekad se sužava, a ponekad širi, te uvijek moramo znati najveću vrijednost koja se nalazi u segmentu.
+
+Za ovu metodu trebati ćemo koristiti jedan dek (eng. _deque_) koji će odgovarati na upite za najveći element, kojeg ćemo nazvati _**S**_, te jedan red (eng. _queue_) koji predstavlja pravi niz, nazvati ćemo ga _**A**_. Red _**A**_ predstavlja "pravo" stanje našeg niza, tj. nakon operacije dodavanja (na kraj) doista dodajemo element na kraj, te slično nakon brisanja elementa (s početka) doista izbacujemo element iz _**A**_. Za razliku od reda _**A**_, dek _**S**_ raditi će slično kao i stog _**S**_ u monotonom stogu. 
+
+Pri dodavanju novog elementa na kraj niza događa se sljedeće. Na kraj reda _**A**_ dodajemo novi element, a s kraja deka _**S**_ brišemo sve elemente koji su **manji** od novog elementa, te nakon tih brisanja tek dodajemo novi element na kraj. Motivacija iza ove radnje, jest ta da ukoliko imamo neki element _**a**_ koji je dodan prije nekog **većeg** elementa _**b**_, zapravo uopće nije vrijedan daljnjeg čuvanja, jer nikada neće moći biti najveći element (dokle god se _**a**_ nalazi u nizu, nalaziti će se i sigurno _**b**_). 
+
+Ukoliko trebamo izbrisati element na početku, trebamo provjeriti je li prvi element reda _**A**_ jednak prvom elementu deka _**S**_ - ukoliko jest, izbacimo prvi element iz deka _**S**_. Nakon te provjere možemo slobodno izbaciti element s početka reda _**A**_. 
