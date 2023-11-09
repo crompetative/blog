@@ -55,3 +55,42 @@ Primjetimo kako se najveći element uvijek nalazi na početku deka _**S**_. Tako
   <img src="https://crompetitive.github.io/blog/assets/monotone_queue_image.png" />
 </p>
 
+Za bolje razumijevanje proučite kod:
+```c++
+#include <cstdio>
+#include <queue>
+#include <deque>
+
+using namespace std;
+
+// implementirati ćemo monotoni red kao strukturu
+struct monotone_queue {
+  // u našoj strukturi deklarirajmo pomoćne strukture (dek S i red A)
+  deque<int> S;
+  queue<int> A;
+
+  // funkcija dodavanja elementa
+  void push(int x) {
+    // najprije dodajemo element u red A
+    A.push(x);
+    // zatim brišemo sve elemente koji su manji od x s kraja deka
+    while(!S.empty() && S.back() < x) { S.pop_back(); }
+    // te na kraja dodajemo x u dek
+    S.push_back(x);
+  }
+
+  // funkcija brisanja elementa (s početka)
+  void pop(int x) {
+    // ukoliko su prvi elementi reda A i deka S jednaki obrisi prvi element iz S
+    if(S.front() == A.front()) { S.pop_front(); }
+    // obrisi prvi element iz A
+    A.pop_front();
+  }
+
+  // funkcija koja vraća najveći element u nizu
+  void max() {
+    // najveći element uvijek se nalazi na početku deka S
+    return S.front();
+  }
+};
+```
